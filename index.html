@@ -328,11 +328,21 @@
                 </div>
 
                 <div class="col-sm-10">
-					<!--<h3>Title</h3>-->
+					<h3>Modeling and Mitigating Communication Bottlenecks for Large Model Training at Scale</h3>
 					<h4><a href="https://www.linkedin.com/in/tushar-krishna-a60b0970/" target="_blank">Tushar Krishna
 						(Associate Professor - Georgia Institute of Technology)</a></h4>
 					<p>
-						<em>Talk details to be announced soon!</em>
+						The unprecedented success of large language models (LLMs) &mdash; such as Open AI's GPT-3 and GPT-4, Google's Bard, Meta's LLaMa , Cerebras-GPT and
+						others &mdash; is emphasizing the ever-growing demand to efficiently train them. These models leverage billions to trillions of model parameters and
+						this trend continues to increase at an unforeseen rate. The large model size makes it impossible for their parameters to fit within a single accelerator
+						device, whose memory is usually capped at tens of GBs. Furthermore, even if we succeed to fit the model into a single device, their tremendous compute
+						requirement leads to almost impractical training time. For example, GPT-3 consists of 175B parameters and takes 355 GPU-years to train with a single
+						NVIDIA V100 GPU. This has led to a growing interest in distributed training, which is the idea of sharding model weights and/or data samples across
+						multiple accelerator devices. However, this comes at the expense of communication overhead to exchange gradients and activations, and it has already
+						become a key bottleneck for distributed training. We identify that the communication challenge will get exacerbated in future systems that are expected
+						to leverage multi-dimensional networks with heterogeneous bandwidths due to diverse fabric technologies (e.g., chiplets, rack-scale, and scaleout).
+						We present our recent works on <em>(i)</em> modeling future training platforms to identify such bottlenecks, and <em>(ii)</em> a novel runtime scheduling
+						policy to enhance network bandwidth utilization.
           	  		</p> 
 				</div>
             </div>
